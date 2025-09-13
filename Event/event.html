@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events & Clubs | EU Track Institution</title>
+  <link rel="stylesheet" href="event.css" />
+</head>
+<body>
+  <!-- ─── SITE HEADER ─────────────────────────────────────────── -->
+  <header class="site-header">
+    <h1>EduTrack Institution</h1>
+    <p class="tagline">Discover our vibrant campus life — events, clubs & more</p>
+  </header>
+
+  <main>
+    <!-- ─── INTRO (image + text, centred) ──────────────────────── -->
+    <section class="intro section">
+      <div class="intro-wrapper">
+        <img
+          src="intro.jpg"
+          alt="Students enjoying campus life"
+          class="intro-img"
+        />
+        <div class="intro-text">
+          <h2>Campus Life: Events & Clubs</h2>
+          <p>
+            From high-energy hackathons to eco-friendly initiatives, EduTrack
+            offers a packed calendar of events and an ever-growing selection of
+            student-run clubs. Browse what’s happening and find your community
+            below.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TWO-COLUMN WRAPPER (Events | Clubs) ────────────────── -->
+    <section class="events-clubs section">
+      <div id="eventsColumn" class="column">
+        <h2>Upcoming Events</h2>
+        <div id="eventsGrid" class="card-grid"></div>
+      </div>
+
+      <div id="clubsColumn" class="column">
+        <h2>Student Clubs</h2>
+        <div id="clubsGrid" class="card-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── MODAL ────────────────────────────────────────────────── -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="closeModal" class="close-btn" aria-label="Close">&times;</button>
+      <img id="modalImg" class="modal-img" alt="" />
+      <h3 id="modalTitle"></h3>
+      <p id="modalBody"></p>
+    </div>
+  </div>
+
+  <script src="event.js"></script>
+  <footer>
+        <div class="footer-content" id="contactUS">
+            <h2>Contact Us</h2>
+            <p>📍123, Dubai Crossroad, Dubai Mainroad, Dubai.</p>
+            <p>📞 +94 77 123 4567</p>
+            <p>📧 Connect@gmail.com</p>
+            
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><img src="fb.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="insta.jpg" alt="Twitter"></a>
+                <a href="https://x.com/"><img src="x.jpeg" alt="X"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+

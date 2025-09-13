@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduTrack</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="Images/logo.png" alt="LOGO" height="80px" width="100%">
+    </div>
+    <div class="title">
+      <h1>EduTrack</h1>
+    </div>
+    <div class="search-container">
+      <input type="search" class="search-box">
+      <button class="search-button">Search</button>
+    </div>
+  </div>
+
+<div class="navigation">
+    <div>
+        <ul class="nav-menu">
+            <li><a href="Home/home.html">HOME</a></li>
+            <li><a href="AboutUs/aboutus.html">ABOUT US</a></li>
+            <li class="dropdown">
+              <a href="#">FACULTIES ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Faculty/Engineering/Engineering.html">ENGINEERING</a></li>
+                    <li><a href="Faculty/Computing/Computing.html">COMPUTING</a></li>
+                    <li><a href="Faculty/Business/Business.html">BUSINESS</a></li>
+                    <li><a href="Faculty/medicine/medicine.html">MEDICINE</a></li>
+                </ul>
+            </li>
+
+            <li><a href="Life/life.html">STUDENT LIFE</a></li>
+            <li><a href="Event/event.html">EVENT & CLUBS</a></li>
+            <li><a href="#contactUS">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <div class="signreg" >
+            <button onclick="showsignin()">Sign in</button>
+            <button onclick="showregister()">Register</button>
+    </div>
+</div>
+
+<section class="signin" id="signin">
+        <div class="signinpart">
+    
+            <div class="signinpartimg">
+                <img src="Images/connect.png" alt="logo" >
+            </div>
+
+            <div class="login-container">
+                <input type="text" placeholder="Email address or phone number" class="input-field">
+                <input type="password" placeholder="Password" class="input-field">
+                <button class="login-button">Log in</button>
+                <a href="#" class="forgot-password">Forgotten password?</a>
+                <hr>
+                <button class="create-account-button">Create new account</button>
+              </div>
+        </div>
+</section>
+
+<section class="register" id="register">  
+
+        <div class="registerpart">
+            <div class="registerimg">
+                <img src="Images/connect.png" alt="logo" >
+            </div>  
+
+            <div class="register-container">
+              <form name="regForm" onsubmit="return validateForm()">
+
+              <h2>Registration Form</h2>
+
+              <label>Name:</label>
+              <input type="text" name="name" class="input-field" placeholder="Enter Your Name">
+
+              <label>Address:</label>
+              <input type="text" name="address" class="input-field" placeholder="Enter Your Address">
+
+              <label>Country:</label>
+              <select name="country">
+                  <option value="">(Please select a Country)</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="India">India</option>
+                  <option value="UK">UK</option>
+              </select>
+
+              <label>ZIP Code:</label>
+              <input type="text" name="zip" class="input-field" placeholder="Enter Your ZIP Code">
+
+              <label>Email:</label>
+              <input type="text" name="email" class="input-field" placeholder="Enter Your E-Mail">
+
+              <label>Gender:</label><br>
+              <input type="radio" name="gender" value="Male"> Male
+              <input type="radio" name="gender" value="Female"> Female<br><br>
+
+              <label>Language:</label><br>
+              <input type="checkbox" name="language" value="English"> English
+              <input type="checkbox" name="language" value="Tamil"> Tamil<br><br>
+
+              <label>About:</label>
+              <textarea name="about" rows="4" cols="40" class="input-field" class="input-field"></textarea>
+
+              <input type="submit" value="Submit">
+          </form>
+          </div>
+    </div>
+</section>
+
+<section id="home">
+  <section class="welcome-section">
+    <div class="container">
+      <div class="left-column grad-img">
+        <img src="graduate1.png" alt="Graduate Student" class="grad-img" id="slideshow-img-welcome" />
+        <blockquote>
+          “Thank you EduAcademy for giving us this enormous opportunity to study a foreign degree here in Sri Lanka”
+        </blockquote>
+      </div>
+
+      <div class="right-column">
+        <h1>Welcome to EduAcademy</h1>
+        <p>
+          EduAcademy is recognized as Sri Lanka’s largest and one of the most prestigious non-state degree-awarding institutes. Over the past two decades, EduAcademy has been rooted in its commitment to supporting educational excellence, creating an environment for students to gain vital skills thus contributing towards shaping the national economy.
+        </p>
+        <p>
+          At EduAcademy, we foster a culture of innovation, where ideas are nurtured and turned into impactful endeavors. Since its inception in 1999, EduAcademy has empowered individuals with the passion, determination, and foresight to create positive change in society.
+        </p>
+        <p>
+          Our degrees are approved by the Ministry of Education and the University Grants Commission (UGC). Additionally, we are members of the Association of Commonwealth Universities (ACU) and the International Association of Universities (IAU). Our Civil and Mechanical engineering degrees are recognized by IESL, Sri Lanka. EduAcademy is the first Sri Lankan institute to be accredited by the Institution of Engineering & Technology, UK. We've been ranked 8th in Sri Lanka and emerged as the number 1 non-state higher education institution in Sri Lanka.
+        </p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <img src="Images/25.jpeg" alt="Existence Icon" />
+            <h2>25+ YEARS</h2>
+            <p>OF EXISTENCE</p>
+          </div>
+          <div class="stat-item">
+            <img src="Images/student.png" alt="Faculty Icon" />
+            <h2>400+</h2>
+            <p>FACULTY MEMBERS</p>
+          </div>
+          <div class="stat-item">
+            <img src="Images/experience.jpeg" alt="Experience Icon" />
+            <h2>5000 YEARS</h2>
+            <p>OF COLLECTIVE EXPERIENCE</p>
+          </div>
+          <div class="stat-item">
+            <img src="Images/sucess.png" alt="Success Icon" />
+            <h2>OVER 30000</h2>
+            <p>SUCCESS STORIES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- JavaScript Section -->
+  <script>
+    // Welcome section slideshow
+    const imagesWelcome = [
+      'Images/graduate1.png',
+      'Images/graduate2.png',
+      'Images/graduate3.png',
+      'Images/graduate4.png'
+    ];
+    let currentWelcomeIndex = 0;
+    const imgWelcome = document.getElementById('slideshow-img-welcome');
+
+    setInterval(() => {
+      currentWelcomeIndex = (currentWelcomeIndex + 1) % imagesWelcome.length;
+      imgWelcome.style.opacity = 0;
+      setTimeout(() => {
+        imgWelcome.src = imagesWelcome[currentWelcomeIndex];
+        imgWelcome.style.opacity = 1;
+      }, 300);
+    }, 2000);
+
+    // About section slideshow
+    const imagesAbout = [
+      'about1.png',
+      'about2.png',
+      'about3.png',
+      'about4.png'
+    ];
+    let currentAboutIndex = 0;
+    const imgAbout = document.getElementById('slideshow-img-about');
+
+    setInterval(() => {
+      currentAboutIndex = (currentAboutIndex + 1) % imagesAbout.length;
+      imgAbout.style.opacity = 0;
+      setTimeout(() => {
+        imgAbout.src = imagesAbout[currentAboutIndex];
+        imgAbout.style.opacity = 1;
+      }, 300);
+    }, 2000);
+  </script>
+</section>
+
+
+
+      </section>
+        
+      </div>
+</section>
+  
+    <section class="map" id="location">
+        <h3>Find Us Here</h3>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345099414!2d144.95592831590623!3d-37.81720997975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c66c5a0a5c54b2!2sHotel%20Squad!5e0!3m2!1sen!2sus!4v1637802309361!5m2!1sen!2sus" 
+        width="100%" height="300"  >
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="footer-content" id="contactUS">
+            <h2>Contact Us</h2>
+            <p>📍123, Dubai Crossroad, Dubai Mainroad, Dubai.</p>
+            <p>📞 +94 77 123 4567</p>
+            <p>📧 Connect@gmail.com</p>
+            
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><img src="Images/fb.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="Images/insta.jpg" alt="Twitter"></a>
+                <a href="https://x.com/"><img src="Images/x.jpeg" alt="X"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="project.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduTrack - Faculty of Engineering</title>
+  <link rel="stylesheet" href="Engineering.css" />
+  <script defer src="Engineering.js"></script>
+</head>
+<body>
+  <header>
+    <h1>EduTrack - Faculty of Engineering</h1>
+  </header>
+
+  <!-- Department Grid -->
+  <section class="department-grid">
+    <div class="card" onclick="showDepartment('civil')">
+      <img src="civil.png" alt="Civil Engineering" />
+      <h3>Civil Engineering</h3>
+    </div>
+    <div class="card" onclick="showDepartment('mechanical')">
+      <img src="mech.jpg" alt="Mechanical Engineering" />
+      <h3>Mechanical Engineering</h3>
+    </div>
+    <div class="card" onclick="showDepartment('electrical')">
+      <img src="electrical.jpg" alt="Electrical Engineering" />
+      <h3>Electrical Engineering</h3>
+    </div>
+    <div class="card" onclick="showDepartment('se')">
+      <img src="software.jpg" alt="Software Engineering" />
+      <h3>Software Engineering</h3>
+    </div>
+  </section>
+
+  <!-- Default Info -->
+  <section id="department-info" class="info-box">
+    <h2>Welcome to EduTrack Faculty of Engineering</h2>
+    <hr class="separator">
+    <p>EduTrack's Faculty of Engineering fosters innovation and hands-on learning, producing skilled professionals who are ready to transform the future of technology and infrastructure. We are committed to academic excellence, industry collaboration, and global competence, empowering students to take on real-world engineering challenges.</p>
+  </section>
+
+  <!-- Dynamic Course Details -->
+  <section id="course-details" class="info-box" style="display: none;"></section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content" id="contactUS">
+      <h2>Contact Us</h2>
+      <p>📍123, Dubai Crossroad, Dubai Mainroad, Dubai.</p>
+      <p>📞 +94 77 123 4567</p>
+      <p>📧 Connect@gmail.com</p>
+
+      <h2>Follow Us</h2>
+      <div class="social-links">
+        <a href="https://www.facebook.com/"><img src="fb.jpg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="insta.jpg" alt="Instagram"></a>
+        <a href="https://x.com/"><img src="x.jpeg" alt="X"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
